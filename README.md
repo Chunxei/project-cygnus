@@ -1,2 +1,2 @@
 # project-cygnus
-concept webapp for space travel agency
+concept webapp for space fictitious travel agency
