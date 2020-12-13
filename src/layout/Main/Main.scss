@@ -1,0 +1,121 @@
+@import '../../utils/mixins/colors', '../../utils/mixins/debug';
+
+.Main {
+  // @include teal-band;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.welcome-overlay {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  
+  .overlay-top-slide, .overlay-bottom-slide {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .overlay-top-slide {
+    align-items: flex-end;
+    color: rgba(#406176, 0);
+    padding-bottom: 10px;
+    // transform: translateY(-51vh);
+  }
+  .overlay-bottom-slide {
+    align-items: flex-start;
+    color: rgba(#8BCFFF, 0);
+    padding-top: 10px;
+    // transform: translateY(51vh);
+  }
+
+  &.page-loaded {
+    animation: welcome-overlay 5s linear;
+    animation-fill-mode: forwards;
+
+    .overlay-top-slide {
+      animation: top-slide 5s ease-out;
+      animation-fill-mode: forwards;
+    }
+    .overlay-bottom-slide {
+      animation: bottom-slide 5s ease-out;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes welcome-overlay {
+    100% {
+      visibility: hidden;
+    }
+  }
+
+  @keyframes top-slide {
+    10% {
+      // transform: translateY(51vh);
+      color: rgba(#406176, 0);
+    }
+    30% {
+      // transform: translateY(51vh);
+      color: rgba(#406176, 1);
+    }
+    80% {
+      // transform: translateX(0);
+      transform: translateY(0);
+      color: rgba(#406176, 1);
+    }
+    90% {
+      // transform: translateX(-101vw);
+      transform: translateY(-51vh);
+      color: rgba(#406176, 0);
+    }
+    100% {
+      // transform: translateY(51vh) translateX(-101vw);
+      // transform: translateX(-101vw);
+      transform: translateY(-51vh);
+      color: rgba(#406176, 0);
+      display: none;
+    }
+  }
+
+  @keyframes bottom-slide {
+    10% {
+      // transform: translateY(-51vh);
+    color: rgba(#8BCFFF, 0);
+    }
+    30% {
+      // transform: translateY(-51vh);
+      color: rgba(#8BCFFF, 0);
+    }
+    50% {
+      // transform: translateY(-51vh);
+      color: rgba(#8BCFFF, 1);
+    }
+    80% {
+      // transform: translateX(0);
+      transform: translateY(0);
+      color: rgba(#8BCFFF, 1);
+    }
+    90% {
+      // transform: translateX(101vw);
+      transform: translateY(51vh);
+      color: rgba(#8BCFFF, 0);
+    }
+    100% {
+      // transform: translateY(-51vh) translateX(101vw);
+      // transform: translateX(101vw);
+      transform: translateY(51vh);
+      color: rgba(#8BCFFF, 0);
+      display: none;
+    }
+  }
+}

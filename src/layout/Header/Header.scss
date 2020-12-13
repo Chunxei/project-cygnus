@@ -1,0 +1,44 @@
+@import '../../utils/mixins/debug', '../../utils/mixins/colors';
+
+.Header {
+  // @include red-band;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background-color: rgba(#fff, 0);
+  transition: background 0.3s ease-in-out;
+
+  &.scrolled {
+    // background-color: #fff;
+    background-color: rgba(#fff, 1);
+    box-shadow: 0 1px 7px rgba(#000, 0.2);
+  }
+}
+
+.brand-logo-shadowed {
+  // margin: 0 auto 0 70px;
+  margin: 0 auto 0 5vw;
+  img {
+    width: auto;
+    height: auto;
+    // max-width: 230px;
+    max-width: 15vw;
+  }
+}
+
+.banner-title {
+  z-index: -1;
+  position: absolute;
+  left: 33vw;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: $primary-light-2;
+}
