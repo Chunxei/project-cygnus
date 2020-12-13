@@ -1,0 +1,78 @@
+@import './utils/mixins/reset', './utils/mixins/debug', './utils/mixins/colors';
+
+//Raleway
+@font-face {
+	font-family: "Raleway";
+	src: url('./assets/fonts/raleway-regular-webfont.woff2') format('woff2'),
+			url('./assets/fonts/raleway-regular-webfont.woff') format('woff');
+	font-weight: 400; //regular/normal
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url('./assets/fonts/raleway-medium-webfont.woff2') format('woff2'),
+			url('./assets/fonts/raleway-medium-webfont.woff') format('woff');
+	font-weight: 500; //medium
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url('./assets/fonts/raleway-semibold-webfont.woff2') format('woff2'),
+			url('./assets/fonts/raleway-semibold-webfont.woff') format('woff');
+	font-weight: 600; //semibold
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url('./assets/fonts/raleway-bold-webfont.woff2') format('woff2'),
+			url('./assets/fonts/raleway-bold-webfont.woff') format('woff');
+	font-weight: 700; //bold
+	font-style: normal;
+}
+
+html {
+	font-size: 16px;
+	overflow-x: hidden;
+}
+body {
+	// overflow-x: hidden;
+}
+
+img {
+	// image-rendering: pixelated;
+	// image-rendering: optimizeSpeed;             /*                     */
+	// image-rendering: -moz-crisp-edges;          /* Firefox             */
+	image-rendering: -o-crisp-edges;            /* Opera               */
+	image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	height: 80px;
+	border-radius: 25px;
+  background: $primary-dark;
+  transition: 0.1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  // background: #555;
+  background: $primary-desat;
+}
+
+::-webkit-scrollbar-button {
+  // background: $primary-desat;
+	// height: 20px;
+	// border-radius: 25px;
+}

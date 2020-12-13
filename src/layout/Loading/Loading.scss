@@ -1,0 +1,12 @@
+@import '../../utils/mixins/colors', '../../utils/mixins/debug';
+
+.Loading {
+  // @include red-band;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: inherit;
+  height: inherit;
+  min-height: inherit;
+}
