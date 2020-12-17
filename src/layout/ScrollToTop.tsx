@@ -24,8 +24,16 @@ function ScrollToTop(props: ScrollProps): null {
     // console.log(pageName);
 
     switch (pageName) {
-      case 'Worlds':
       case 'Missions':
+      case 'Worlds':
+        if (pathname.match(new RegExp(`(?<=${pageName}\\/)\\w+`, 'i'))) {
+          document.title = `${pageName.substr(0, pageName.length - 1)} Details - Project Cygnus`;
+          setBannerTitle(pageName === 'Missions' ? 'Missions' : 'Planet');
+        } else {
+          document.title = `${pageName} - Project Cygnus`;
+          setBannerTitle(pageName);
+        }
+        break;
       case 'Starview':
       case 'About':
       case 'Enroll':
@@ -34,8 +42,11 @@ function ScrollToTop(props: ScrollProps): null {
         break;
       case '/':
       case 'Home':
-      default:
         setBannerTitle('Home');
+        document.title = 'Project Cygnus';
+        break;
+      default:
+        setBannerTitle('');
         document.title = 'Project Cygnus';
         break;
     }

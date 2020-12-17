@@ -5,12 +5,65 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-family: "Raleway", Helvetica, sans-serif;
+  width: 55vw;
   // margin-right: 70px;
   margin-right: 5vw;
+
+  &.starview, &.worlds {
+
+    .nav-link:not(:last-of-type) {
+      color: #fff;
+    
+      &:hover {
+        text-shadow: 5px 18px 0 rgba(#fff, 0.3), -5px -18px 0 rgba(#fff, 0.3);
+      }
+    
+      &.active {
+        text-shadow: 0 0 3px rgba(#fff, 0.8);
+      }
+    }
+
+    .enroll-nav-link {
+      &:hover {
+        color: $primary-dark;
+        // background-color: $primary-light;
+        background-color: #fff;
+    
+        &::before {
+          animation: dilateBefore-2 0.2s forwards;
+        }
+        &::after {
+          animation: dilateAfter-2 0.2s forwards;
+        }
+      }
+    
+      @keyframes dilateBefore-2 {
+        100% {
+          border-color: $primary-dark;
+          // opacity: 0.5;
+          width: 112px;
+          background-color: $primary-desat;
+          transform: translateY(-8px);
+          border-radius: 50%;
+        }
+      }
+    
+      @keyframes dilateAfter-2 {
+        100% {
+          border-color: $primary-dark;
+          // opacity: 0.5;
+          width: 112px;
+          background-color: $primary-desat;
+          transform: translateY(8px);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
 
 .nav-link {
-  font-family: "Raleway", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: $primary-sat;
@@ -21,7 +74,8 @@
   }
 
   &:last-of-type {
-    margin-left: 17vw;
+    // margin-left: 17vw;
+    margin-left: auto;
   }
 
   &:not(:last-of-type):hover {
@@ -44,9 +98,8 @@
   font-weight: 600;
   color: #fff;
   background-color: $primary-dark;
-  // width: 100px;
-  // height: 40px;
   width: 83px;
+  min-width: 83px;
   height: 23px;
   border: 3px solid;
   border-color: $primary-dark;

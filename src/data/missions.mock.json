@@ -1,0 +1,93 @@
+
+[
+  {
+    "id": "0001",
+    "title": "titanium ore extraction",
+    "type": "mining",
+    "planet": "geryon",
+    "starSystem": "eos",
+    "duration": "4 months",
+    "images": {
+      "space": ["geryon-planet-1.png"],
+      "surface": ["geryon-1.png", "geryon-2.png", "geryon-3.png", "geryon-4.png", "geryon-5.png"]
+    },
+    "crewSize": 20,
+    "risks": ["hypothermia", "hypoxia", "radiation", "avalanches"],
+    "payment": 1400000
+  },
+  {
+    "id": "0010",
+    "title": "fossil investigation",
+    "type": "archaeology",
+    "planet": "hemera",
+    "starSystem": "cacus",
+    "duration": "2 months",
+    "images": {
+      "space": ["hemera-planet-1.png"],
+      "surface": ["hemera-1.png", "hemera-2.png", "hemera-3.png", "hemera-4.png"]
+    },
+    "crewSize": 12,
+    "risks": ["drowning", "animal attacks", "hyperoxia"],
+    "payment": 2000000
+  },
+  {
+    "id": "0011",
+    "title": "soil testing",
+    "type": "agriculture",
+    "planet": "hemera",
+    "starSystem": "cacus",
+    "duration": "1 month",
+    "images": {
+      "space": ["hemera-planet-1.png"],
+      "surface": ["hemera-1.png", "hemera-2.png", "hemera-3.png", "hemera-4.png"]
+    },
+    "crewSize": 7,
+    "risks": ["animal attacks", "hyperoxia", "poisoning"],
+    "payment": 800000
+  },
+  {
+    "id": "0100",
+    "title": "cloud sampling",
+    "type": "nephology",
+    "planet": "thalassa",
+    "starSystem": "pistis",
+    "duration": "2 months",
+    "images": {
+      "space": ["thalassa-planet-1.png"],
+      "surface": ["thalassa-1.png", "thalassa-2.png", "thalassa-3.png"]
+    },
+    "crewSize": 7,
+    "risks": ["electrocution", "hypoxia", "hypothermia"],
+    "payment": 1000000
+  },
+  {
+    "id": "0101",
+    "title": "cave mapping",
+    "type": "geology",
+    "planet": "geryon",
+    "starSystem": "eos",
+    "duration": "3 months",
+    "images": {
+      "space": ["geryon-planet-1.png"],
+      "surface": ["geryon-1.png", "geryon-2.png", "geryon-3.png", "geryon-4.png", "geryon-5.png"]
+    },
+    "crewSize": 10,
+    "risks": ["hypothermia", "hypoxia", "radiation", "cave-ins"],
+    "payment": 9000000
+  },
+  {
+    "id": "0111",
+    "title": "study local wildlife",
+    "type": "zoology",
+    "planet": "asterius",
+    "starSystem": "eupraxia",
+    "duration": "5 months",
+    "images": {
+      "space": ["asterius-planet-1.png"],
+      "surface": ["asterius-1.png", "asterius-2.png"]
+    },
+    "crewSize": 17,
+    "risks": ["radiation", "hypothermia", "sunburns", "dehydration"],
+    "payment": 2500000
+  }
+]

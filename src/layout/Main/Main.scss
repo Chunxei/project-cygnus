@@ -2,8 +2,9 @@
 
 .Main {
   // @include teal-band;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
+	white-space: pre-wrap;
 }
 
 .welcome-overlay {

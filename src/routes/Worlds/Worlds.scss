@@ -1,0 +1,17 @@
+@import '../../utils/mixins/colors', '../../utils/mixins/debug';
+
+.Worlds {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 9vw;
+  background-color: $primary-dark;
+
+  *::selection {
+    background-color: #fff;
+    color: $primary-dark;
+  }
+}
