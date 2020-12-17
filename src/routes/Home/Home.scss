@@ -2,8 +2,15 @@
 
 .Home {
   width: 100%;
+  background-color: #fff;
   font-family: Raleway, Helvetica, sans-serif;
+
+  *::selection {
+    background-color: $primary-desat;
+    color: #fff;
+  }
 }
+
 
 .landing-page {
   // @include red-band;
@@ -24,6 +31,7 @@
       width: auto;
       height: auto;
       max-width: 30vw;
+      min-width: 200px;
     }
   }
   
@@ -53,7 +61,8 @@
   }
 
   .clouds-small-1 {
-    position: relative;
+    z-index: 2;
+    // position: relative;
     top: 90px;
     left: 40vw;
     max-width: 217px;
@@ -116,7 +125,7 @@
     text-align: left;
     margin: {
       top: 265px;
-      // left: 15vw;
+      left: 15vw;
     }
 
     h1 {
@@ -146,7 +155,12 @@
     }
 
     h2 {
-      
+      position: absolute;
+      top: 110px;
+      left: 28vw;
+      font-size: 20px;
+      font-weight: 600;
+      color: rgba($primary-desat, 0.03);
     }
 
     .landing-page-space-poem {
@@ -162,6 +176,593 @@
       font-weight: 500;
       color: $primary-desat;
       opacity: 0.8;
+    }
+  }
+}
+
+
+.journey-so-far {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 200px;
+  background-image: linear-gradient(to right, #fff 40%, $primary-light);
+
+  .margin-cutout {
+    width: 130px;
+    max-height: 1300px;
+  }
+
+  .space-milestones {
+    // @include red-band;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .space-milestones-title {
+    // @include orange-band;
+    width: 100%;
+    text-align: left;
+    padding: {
+      top: 100px;
+      left: 80px;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      color: $primary-desat;
+      text-shadow: 0 -60px 0 rgba($primary-desat, 0.05);
+      margin-bottom: 33px;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $secondary;
+      text-shadow: 0 -27px 0 rgba($primary-desat, 0.05), 0 27px 0 rgba($primary-desat, 0.05);
+      margin-bottom: 103px;
+    }
+  }
+
+  .space-milestones-timeline-section {
+    // @include red-band;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .space-milestones-timeline {
+    // @include teal-band;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 4px;
+    height: 800px;
+    background-color: $primary-desat-2;
+    // #C5CFD6
+    margin-left: 260px;
+  }
+
+  .milestone-step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: $primary-desat-2;
+    transition: background 0.5s ease-in-out;
+
+    &.visible {
+
+      .milestone-step-achievement  {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+
+      &::before {
+        transform: scale(0.6);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      // background-color: #C5CFD6;
+      background-color: $primary-light;
+      transform: scale(0.1);
+      transition: 0.6s ease-in-out;
+    }
+  }
+
+  .milestone-step-date, .milestone-step-achievement {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: $primary-desat;
+    background-color: $primary-light;
+    border-radius: 11px;
+    box-shadow: 2px 2px 5px rgba(#000, 0.2);
+    transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out;
+  }
+
+  .milestone-step-date {
+    left: -167px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 136px;
+    height: 37px;
+  }
+
+  .milestone-step-achievement {
+    right: -260px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 20px;
+    width: 229px;
+    height: 55px;
+    transform: translateY(100px);
+    opacity: 0;
+    transform-origin: -271px 50%;
+  }
+
+  .milestone-step-emphasis {
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.3px;
+    background-color: $primary-desat;
+    color: $primary-light;
+  }
+
+  .milestone-step-achievement-tall {
+    height: 70px;
+    font-size: 15px;
+  }
+
+  .space-milestones-photos {
+    // @include red-band;
+    position: relative;
+    width: 45%;
+    margin-left: auto;
+
+    img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      max-height: 240px;
+      min-height: 200px;
+      cursor: pointer;
+      opacity: 0;
+      filter: grayscale(90%);
+      transform-origin: 50%;
+      transform: translateY(100px);
+      transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out, 0.3s ease-in-out;
+
+      &:nth-of-type(1) {
+        z-index: 2;
+        top: 0;
+        left: 0;
+        transform: translateY(100px) rotate(5deg);
+      }
+      &:nth-of-type(2) {
+        top: 180px;
+        left: 30%;
+        transform: translateY(100px) rotate(-10deg);
+      }
+      &:nth-of-type(3) {
+        z-index: 1;
+        top: 350px;
+        left: 10%;
+        transform: translateY(100px) rotate(30deg);
+      }
+      &:nth-of-type(4) {
+        z-index: 1;
+        top: 570px;
+        left: 10%;
+        transform: translateY(100px) rotate(10deg);
+      }
+
+      &.visible {
+        opacity: 1;
+
+        &:nth-of-type(1) {
+          transform: translateY(0) rotate(5deg);
+        }
+        &:nth-of-type(2) {
+          transform: translateY(0) rotate(-10deg);
+        }
+        &:nth-of-type(3) {
+          transform: translateY(0) rotate(30deg);
+        }
+        &:nth-of-type(4) {
+          transform: translateY(0) rotate(10deg);
+        }
+      }
+
+      &:hover {
+        z-index: 2;
+        filter: grayscale(0);
+        max-height: 300px;
+        &:nth-of-type(4) {
+          transform: translateY(0) rotate(0);
+          max-height: 70vh;
+          max-width: 60vw;
+          top: 350px;
+          left: -20vw;
+          // position: fixed;
+          // z-index: 99;
+        }
+      }
+    }
+  }
+
+  .space-milestones-underwater-photo {
+    display: none;
+    margin: {
+      top: 70px;
+      left: 80px;
+    }
+    
+    img {
+      width: auto;
+      height: auto;
+      max-width: 40vw;
+      min-width: 250px;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out;
+    }
+
+    &.visible {
+      img {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+
+  .your-legacy-begins {
+    font-size: 30px;
+    color: $primary-desat;
+    font-weight: 700;
+    margin: {
+      top: 100px;
+      left: 80px;
+    }
+  }
+}
+
+.explore-the-fringes {
+  // @include red-band;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  height: 718px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.visible {
+    opacity: 1;
+
+    .explore-the-fringes-images .galaxies-image, .explore-the-fringes-text {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .explore-the-fringes-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin-left: 5vw;
+
+    .galaxies-image {
+      width: auto;
+      height: auto;
+      max-width: 52vw;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out;
+    }
+    .galaxies-image-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: auto;
+      max-width: 25vw;
+      min-width: 250px;  
+    }
+    .clouds-small-galaxies-2 {
+      z-index: 2;
+      position: absolute;
+      top: 10vh;
+      right: 70px;
+      width: auto;
+      height: auto;
+      max-width: 230px;
+      min-width: 180px; 
+      animation: cloud-glide-4 7s infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+  
+      @keyframes cloud-glide-4 {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(-200px);
+        }
+      }
+    }
+
+    .clouds-small-galaxies-1 {
+      z-index: 2;
+      position: absolute;
+      bottom: 150px;
+      left: 5vw;
+      width: auto;
+      height: auto;
+      max-width: 230px;
+      min-width: 180px; 
+      animation: cloud-glide-5 7s infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+  
+      @keyframes cloud-glide-5 {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(70px);
+        }
+      }
+    }
+
+    .cloud-galaxies-1 {
+      z-index: 2;
+      position: absolute;
+      bottom: 100px;
+      left: 35vw;
+      width: auto;
+      height: auto;
+      max-width: 300px;
+      min-width: 180px; 
+      animation: cloud-glide-5 5s infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+  
+      @keyframes cloud-glide-5 {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(100px);
+        }
+      }
+    }
+  }
+
+  .explore-the-fringes-text {
+    z-index: 1;
+    position: relative;
+    padding-top: 20vh;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 0.7s ease-in-out, opacity 0.9s ease-in-out;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      color: $primary-desat;
+      text-shadow: -100px -54px 0 rgba($primary-desat, 0.05), -200px -108px 0 rgba($secondary, 0.1);
+      margin-bottom: 22px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      color: $secondary;
+      text-shadow: 0 -24px 0 rgba($primary-desat, 0.05), 0 24px 0 rgba($primary-desat, 0.05);
+      margin-bottom: 28px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 500;
+      color: $primary-desat;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.discover-other-paths {
+  // @include red-band;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.visible {
+    opacity: 1;
+
+    .discover-other-paths-text h1,
+    .discover-other-paths-text p,
+    .discover-other-paths-image {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &-text {
+    // @include orange-band;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    margin: {
+      top: 100px;
+      left: 10vw;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      color: $primary-desat;
+      text-shadow: -10vw -55px 0 rgba($primary-desat, 0.05);
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out;
+      span { 
+        color: $secondary
+      }
+    }
+
+    p {
+      position: absolute;
+      color: $primary-desat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      padding-left: 80px;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: transform 0.6s ease-in-out, opacity 0.8s ease-in-out;
+    }
+  }
+
+  img {
+    width: auto;
+    height: auto;
+  }
+
+  &-image {
+    max-width: 90vw;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 0.7s ease-in-out, opacity 0.9s ease-in-out;
+  }
+
+  &-cloud-1 {
+    position: absolute;
+    top: 40vh;
+    right: 10vw;
+    max-width: 200px;
+    animation: cloud-glide-6 10s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+    @keyframes cloud-glide-6 {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(100px);
+      }
+    }
+  }
+
+  &-clouds-small-1 {
+    z-index: 1;
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+    max-width: 270px;
+    animation: cloud-glide-7 5s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+    @keyframes cloud-glide-7 {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(-80px);
+      }
+    }
+  }
+}
+
+.project-cygnus-about {
+  // @include red-band;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+
+  .project-cygnus-crossover {
+    // @include teal-band;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+
+    .portal-image {
+      width: auto;
+      height: auto;
+      max-width: 33vw;
+      flex: 1 1 33vw;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      text-align: left;
+      color: $primary-desat;
+      padding: 0 30px;
+      margin-top: 180px;
+      flex: 1 1 34vw;
+    }
+
+    .cygnus-logo-large {
+      position: absolute;
+      top: 26vh;
+      left: calc(28vw);
+      height: auto;
+      width: 46vw;
+      // width: auto;
+    }
+  }
+
+  .supporters-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 7vw;
+    margin-bottom: 70px;
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100px;
     }
   }
 }

@@ -1,0 +1,67 @@
+
+[
+  {
+    "id": "01",
+    "planet": "geryon",
+    "starSystem": "eos",
+    "satellites": 1,
+    "escapeVelocity": "9.4 km/s",
+    "orbitalPeriod": "504 ED",
+    "gravity": "11.2 m/s",
+    "mass": "6.05e24 kg",
+    "radius": "6,271 km",
+    "images": {
+      "space": ["geryon-planet-1.png"],
+      "surface": ["geryon-1.png", "geryon-3.png", "geryon-4.png", "geryon-5.png"]
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et id at amet, commodo mattis quis convallis quis. Viverra suspendisse adipiscing est vel, quis quam suspendisse senectus egestas. Vitae volutpat vulputate dolor aliquam, nunc. Nisi, est habitasse ut tortor placerat. Cursus morbi quam id adipiscing. Vitae maecenas sed eget elementum. Urna, platea vulputate vel sed facilisi eget laoreet. Tellus orci leo elementum erat. Id aliquam amet, vulputate sit in pretium, ut interdum. Lorem tincidunt quam odio lorem morbi nulla nisi, interdum. Malesuada dictum urna mauris id nisl. Venenatis lectus id pharetra, sed nulla amet cursus quam varius. Sit neque lacus, orci pulvinar metus non, et consectetur. Tempor, elit, mattis felis vitae nibh tristique turpis nisi. Magna facilisis elementum scelerisque tellus massa quis et libero. Adipiscing enim vel ut gravida. Eu diam fermentum nunc enim mauris. Nullam sit porttitor lacus, amet phasellus nibh. Proin quis arcu quisque id maecenas odio elit. Tristique tellus malesuada id nisi tristique. Amet in diam ut bibendum sed. Sed interdum nisi, varius nulla consequat fermentum. Enim in mauris sem vivamus ut amet molestie a. Lectus amet, lectus a lacus amet at. Gravida lectus viverra maecenas vitae sit ultrices mauris. Vestibulum diam in egestas lorem orci. Nibh arcu porta pulvinar leo et amet duis. Purus porta amet, sed dui id. Viverra bibendum elit lobortis lacus, fermentum. Enim nulla tempus ullamcorper maecenas massa nunc, tincidunt. Diam tortor, vitae, dui nec faucibus nunc. Tortor augue augue dolor, mauris duis nisi parturient tellus adipiscing. Orci rhoncus viverra elementum amet scelerisque eu dolor. At metus congue imperdiet enim ac leo, commodo rutrum. Fusce vitae consequat habitant mattis mi. Leo in eget ultrices elementum, nisi, sed. Eget euismod diam magna vel id purus adipiscing in adipiscing. A sed tellus fusce tempus auctor donec. Tempor, quam interdum blandit dignissim dignissim condimentum. Et aliquet nisl a habitasse ut est sagittis, aliquet. Est nulla amet proin augue lobortis parturient et lectus. Ullamcorper auctor suspendisse tempor integer aliquam ullamcorper elit ornare vulputate. Tellus ullamcorper aliquam quis lorem eu. Odio egestas faucibus tortor ipsum vulputate leo, aliquam mauris sociis."
+  },
+  {
+    "id": "02",
+    "planet": "asterius",
+    "starSystem": "eupraxia",
+    "satellites": 2,
+    "escapeVelocity": "15.7 km/s",
+    "orbitalPeriod": "270 ED",
+    "gravity": "14 m/s",
+    "mass": "6.89e25 kg",
+    "radius": "8,314 km",
+    "images": {
+      "space": ["asterius-planet-1.png"],
+      "surface": ["asterius-1.png", "asterius-2.png"]
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et id at amet, commodo mattis quis convallis quis. Viverra suspendisse adipiscing est vel, quis quam suspendisse senectus egestas. Vitae volutpat vulputate dolor aliquam, nunc. Nisi, est habitasse ut tortor placerat. Cursus morbi quam id adipiscing. Vitae maecenas sed eget elementum. Urna, platea vulputate vel sed facilisi eget laoreet. Tellus orci leo elementum erat. Id aliquam amet, vulputate sit in pretium, ut interdum. Lorem tincidunt quam odio lorem morbi nulla nisi, interdum. Malesuada dictum urna mauris id nisl. Venenatis lectus id pharetra, sed nulla amet cursus quam varius. Sit neque lacus, orci pulvinar metus non, et consectetur. Tempor, elit, mattis felis vitae nibh tristique turpis nisi. Magna facilisis elementum scelerisque tellus massa quis et libero. Adipiscing enim vel ut gravida. Eu diam fermentum nunc enim mauris. Nullam sit porttitor lacus, amet phasellus nibh. Proin quis arcu quisque id maecenas odio elit. Tristique tellus malesuada id nisi tristique. Amet in diam ut bibendum sed. Sed interdum nisi, varius nulla consequat fermentum. Enim in mauris sem vivamus ut amet molestie a. Lectus amet, lectus a lacus amet at. Gravida lectus viverra maecenas vitae sit ultrices mauris. Vestibulum diam in egestas lorem orci. Nibh arcu porta pulvinar leo et amet duis. Purus porta amet, sed dui id. Viverra bibendum elit lobortis lacus, fermentum. Enim nulla tempus ullamcorper maecenas massa nunc, tincidunt. Diam tortor, vitae, dui nec faucibus nunc. Tortor augue augue dolor, mauris duis nisi parturient tellus adipiscing. Orci rhoncus viverra elementum amet scelerisque eu dolor. At metus congue imperdiet enim ac leo, commodo rutrum. Fusce vitae consequat habitant mattis mi. Leo in eget ultrices elementum, nisi, sed. Eget euismod diam magna vel id purus adipiscing in adipiscing. A sed tellus fusce tempus auctor donec. Tempor, quam interdum blandit dignissim dignissim condimentum. Et aliquet nisl a habitasse ut est sagittis, aliquet. Est nulla amet proin augue lobortis parturient et lectus. Ullamcorper auctor suspendisse tempor integer aliquam ullamcorper elit ornare vulputate. Tellus ullamcorper aliquam quis lorem eu. Odio egestas faucibus tortor ipsum vulputate leo, aliquam mauris sociis."
+  },
+  {
+    "id": "03",
+    "planet": "hemera",
+    "starSystem": "cacus",
+    "satellites": 1,
+    "escapeVelocity": "10.9 km/s",
+    "orbitalPeriod": "401 ED",
+    "gravity": "10.73 m/s",
+    "mass": "6.92e24 kg",
+    "radius": "6,609 km",
+    "images": {
+      "space": ["hemera-planet-1.png"],
+      "surface": ["hemera-1.png", "hemera-2.png", "hemera-3.png", "hemera-4.png"]
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et id at amet, commodo mattis quis convallis quis. Viverra suspendisse adipiscing est vel, quis quam suspendisse senectus egestas. Vitae volutpat vulputate dolor aliquam, nunc. Nisi, est habitasse ut tortor placerat. Cursus morbi quam id adipiscing. Vitae maecenas sed eget elementum. Urna, platea vulputate vel sed facilisi eget laoreet. Tellus orci leo elementum erat. Id aliquam amet, vulputate sit in pretium, ut interdum. Lorem tincidunt quam odio lorem morbi nulla nisi, interdum. Malesuada dictum urna mauris id nisl. Venenatis lectus id pharetra, sed nulla amet cursus quam varius. Sit neque lacus, orci pulvinar metus non, et consectetur. Tempor, elit, mattis felis vitae nibh tristique turpis nisi. Magna facilisis elementum scelerisque tellus massa quis et libero. Adipiscing enim vel ut gravida. Eu diam fermentum nunc enim mauris. Nullam sit porttitor lacus, amet phasellus nibh. Proin quis arcu quisque id maecenas odio elit. Tristique tellus malesuada id nisi tristique. Amet in diam ut bibendum sed. Sed interdum nisi, varius nulla consequat fermentum. Enim in mauris sem vivamus ut amet molestie a. Lectus amet, lectus a lacus amet at. Gravida lectus viverra maecenas vitae sit ultrices mauris. Vestibulum diam in egestas lorem orci. Nibh arcu porta pulvinar leo et amet duis. Purus porta amet, sed dui id. Viverra bibendum elit lobortis lacus, fermentum. Enim nulla tempus ullamcorper maecenas massa nunc, tincidunt. Diam tortor, vitae, dui nec faucibus nunc. Tortor augue augue dolor, mauris duis nisi parturient tellus adipiscing. Orci rhoncus viverra elementum amet scelerisque eu dolor. At metus congue imperdiet enim ac leo, commodo rutrum. Fusce vitae consequat habitant mattis mi. Leo in eget ultrices elementum, nisi, sed. Eget euismod diam magna vel id purus adipiscing in adipiscing. A sed tellus fusce tempus auctor donec. Tempor, quam interdum blandit dignissim dignissim condimentum. Et aliquet nisl a habitasse ut est sagittis, aliquet. Est nulla amet proin augue lobortis parturient et lectus. Ullamcorper auctor suspendisse tempor integer aliquam ullamcorper elit ornare vulputate. Tellus ullamcorper aliquam quis lorem eu. Odio egestas faucibus tortor ipsum vulputate leo, aliquam mauris sociis."
+  },
+  {
+    "id": "03",
+    "planet": "thalassa",
+    "starSystem": "pistis",
+    "satellites": 3,
+    "escapeVelocity": "12.03 km/s",
+    "orbitalPeriod": "167 ED",
+    "gravity": "12.04 m/s",
+    "mass": "9.35e25 kg",
+    "radius": "7,893 km",
+    "images": {
+      "space": ["thalassa-planet-1.png"],
+      "surface": ["thalassa-1.png", "thalassa-2.png", "thalassa-3.png"]
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et id at amet, commodo mattis quis convallis quis. Viverra suspendisse adipiscing est vel, quis quam suspendisse senectus egestas. Vitae volutpat vulputate dolor aliquam, nunc. Nisi, est habitasse ut tortor placerat. Cursus morbi quam id adipiscing. Vitae maecenas sed eget elementum. Urna, platea vulputate vel sed facilisi eget laoreet. Tellus orci leo elementum erat. Id aliquam amet, vulputate sit in pretium, ut interdum. Lorem tincidunt quam odio lorem morbi nulla nisi, interdum. Malesuada dictum urna mauris id nisl. Venenatis lectus id pharetra, sed nulla amet cursus quam varius. Sit neque lacus, orci pulvinar metus non, et consectetur. Tempor, elit, mattis felis vitae nibh tristique turpis nisi. Magna facilisis elementum scelerisque tellus massa quis et libero. Adipiscing enim vel ut gravida. Eu diam fermentum nunc enim mauris. Nullam sit porttitor lacus, amet phasellus nibh. Proin quis arcu quisque id maecenas odio elit. Tristique tellus malesuada id nisi tristique. Amet in diam ut bibendum sed. Sed interdum nisi, varius nulla consequat fermentum. Enim in mauris sem vivamus ut amet molestie a. Lectus amet, lectus a lacus amet at. Gravida lectus viverra maecenas vitae sit ultrices mauris. Vestibulum diam in egestas lorem orci. Nibh arcu porta pulvinar leo et amet duis. Purus porta amet, sed dui id. Viverra bibendum elit lobortis lacus, fermentum. Enim nulla tempus ullamcorper maecenas massa nunc, tincidunt. Diam tortor, vitae, dui nec faucibus nunc. Tortor augue augue dolor, mauris duis nisi parturient tellus adipiscing. Orci rhoncus viverra elementum amet scelerisque eu dolor. At metus congue imperdiet enim ac leo, commodo rutrum. Fusce vitae consequat habitant mattis mi. Leo in eget ultrices elementum, nisi, sed. Eget euismod diam magna vel id purus adipiscing in adipiscing. A sed tellus fusce tempus auctor donec. Tempor, quam interdum blandit dignissim dignissim condimentum. Et aliquet nisl a habitasse ut est sagittis, aliquet. Est nulla amet proin augue lobortis parturient et lectus. Ullamcorper auctor suspendisse tempor integer aliquam ullamcorper elit ornare vulputate. Tellus ullamcorper aliquam quis lorem eu. Odio egestas faucibus tortor ipsum vulputate leo, aliquam mauris sociis."
+  }
+]

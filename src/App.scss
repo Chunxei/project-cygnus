@@ -1,3 +1,26 @@
+@import './utils/mixins/colors', './utils/mixins/debug';
+
+
 .App {
-  text-align: center;
+  font-family: Raleway, Helvetica, sans-serif;
+}
+
+.page-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 36px 0;
+
+  &--light {
+    color: #fff;
+  }
+
+  &--dark {
+    color: $primary-desat;
+  }
+
+  &--planet {
+    padding-left: 55px;
+  }
 }

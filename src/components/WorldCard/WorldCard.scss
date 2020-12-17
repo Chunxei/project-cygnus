@@ -1,0 +1,135 @@
+@import '../../utils/mixins/colors', '../../utils/mixins/debug';
+
+.WorldCard {
+  // @include red-band;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 185px;
+  border-radius: 11px;
+  // background-color: #fff;
+
+  &:hover {
+    .world-card-details h3 {
+      text-shadow: 5px 15px 0 rgba($primary-desat, 0.1), -5px -15px 0 rgba($primary-desat, 0.1);
+    }
+
+    .world-card-planet-name-backdrop {
+      // color: $primary-dark;
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.world-card-image {
+  height: inherit;
+  width: 25%;
+
+  img {
+    width: auto;
+    height: inherit;
+    height: 185px;
+  }
+}
+
+.world-card-body {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 75%;
+  height: inherit;
+  border-radius: 27px;
+  background-image: linear-gradient(to right, #4f5b62, rgba(#4f5b62, 0.4));
+  box-shadow: 4px 4px 10px rgba(#000, 0.15);
+  padding: 30px 45px;
+}
+
+.world-card-planet-name-backdrop {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  // color: $primary-dark;
+  color: rgba(#fff, 0.1);
+  transition: 0.1s ease-in-out;
+
+  span {
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+}
+
+.world-card-details {
+  flex: 1 1 70%;
+  position: relative;
+  height: inherit;
+}
+
+.world-card-planet-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 38px;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.world-card-description {
+  flex: 1 1 30%;
+  height: inherit;
+  color: #fff;
+  padding-right: 20px;
+}
+
+.world-card-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 25px;
+  font-weight: 700;
+  color: $primary-dark;
+  width: 30%;
+  padding: 20px 0 30px 0;
+
+  a {
+    position: relative;
+    
+    &:hover {
+      &::before, &::after {
+        transform: scaleX(1);
+      }
+    }
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      right: -50px;
+      height: 4px;
+      border-radius: 10px;
+      background-color: $primary-dark;
+      cursor: pointer;
+      transform: scaleX(0);
+      transform-origin: 100% 50%;
+    }
+
+    &::before {
+      top: 6px;
+      width: 40px;
+      transition: 0.3s ease-in-out;
+    }
+
+    &::after {
+      bottom: 6px;
+      width: 20px;
+      transition: 0.15s ease-in-out;
+    }
+  }
+}

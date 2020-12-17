@@ -1,0 +1,76 @@
+@import '../../utils/mixins/colors', '../../utils/mixins/debug';
+
+.MissionCard {
+  // @include red-band;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 185px;
+  border-radius: 11px;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(#000, 0.15);
+
+  &:hover .mission-card-details h3{
+    // color: $secondary;
+    text-shadow: 5px 15px 0 rgba($primary-desat, 0.1), -5px -15px 0 rgba($primary-desat, 0.1);
+  }
+}
+
+.mission-card-image {
+  height: inherit;
+  width: 25%;
+  background-size: cover;
+  background-position: top;
+}
+
+.mission-card-details {
+  width: 75%;
+  height: inherit;
+  padding: 30px 45px;
+
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $primary-desat;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 38px;
+    transition: text-shadow 0.2s ease-in-out;
+  }
+
+  .mission-card-fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .mission-card-field {
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h6 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $secondary;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: $primary-desat;
+      // margin-bottom: 15px;
+    }
+
+    .Button {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}
